@@ -21,4 +21,4 @@ jobs:
        with:
          connection-string: ${{ secrets.AZURE_POSTGRESQL_CONNECTION_STRING }}
          server-name: dss-postgresql-server
-         sql-file: './data.sql'
+         plsql-file: './data.sql'
