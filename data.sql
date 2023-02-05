@@ -1,4 +1,4 @@
-CREATE TABLE Pot (
+CREATE TABLE DSSdemo (
     PersonID int,
     LastName varchar(255),
     FirstName varchar(255),
