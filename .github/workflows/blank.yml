@@ -17,3 +17,8 @@ jobs:
      - uses: azure/actions/login@v1
        with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
+     - uses: azure/postgresql@v1
+       with:
+         connection-string: ${{ secrets.AZURE_POSTGRESQL_CONNECTION_STRING }}
+         server-name: dss-postgresql-server
+         sql-file: './data.sql'
