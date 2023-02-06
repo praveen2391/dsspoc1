@@ -1,4 +1,4 @@
-CREATE TEMPORARY TABLE city_temp (
+CREATE TABLE city_temp (
       city VARCHAR(80),
       street VARCHAR(80)
    )
