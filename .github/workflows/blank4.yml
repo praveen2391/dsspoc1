@@ -21,5 +21,14 @@ jobs:
        with:
          connection-string: ${{ secrets.AZURE_POSTGRESQL_CONNECTION_STRING }}
          server-name: dss-postgresql-server
-         plsql-file: './data4.sql''./data5.sql''./data6.sql'
+         plsql-file: './data4.sql'    
+     - uses: actions/checkout@v1
+     - uses: azure/actions/login@v1
+       with:
+         creds: ${{ secrets.AZURE_CREDENTIALS }}
+     - uses: azure/postgresql@v1
+       with:
+         connection-string: ${{ secrets.AZURE_POSTGRESQL_CONNECTION_STRING }}
+         server-name: dss-postgresql-server
+         plsql-file: './data5.sql'
        
